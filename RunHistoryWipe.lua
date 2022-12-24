@@ -19,6 +19,8 @@ function RunHistoryWipe.PressWipeRunHistoryButton()
     end
 end
 
+OnControlPressed{ "Assist", RunHistoryWipe.PressWipeRunHistoryButton }
+
 function RunHistoryWipe.WipeRunHistory()
     GameState.ConsecutiveClears = 0
     RunHistoryWipe.AspectRecords = {}
